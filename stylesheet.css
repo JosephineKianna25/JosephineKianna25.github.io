@@ -1,0 +1,174 @@
+/* ---------------- Grundindstillinger ---------------- */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    background: #352208;
+    color: #E1BB80;
+}
+
+/* ---------------- Header ---------------- */
+header {
+    background-color: #352208;
+    color: #E1BB80;
+    text-align: center;
+    padding: 1rem 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin: 0.3em 0;
+}
+
+/* ---------------- Menubar ---------------- */
+nav {
+    background-color: #352208;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+nav ul.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+nav ul.menu li {
+    margin: 0;
+}
+
+nav ul.menu a {
+    display: block;
+    padding: 1rem 2rem;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+nav ul.menu a:hover,
+nav ul.menu a.active {
+    background-color: #E1BB80; /* mørkere grøn ved hover/aktiv */
+}
+
+/* ---------------- Main indhold ---------------- */
+main {
+    padding: 2rem 1rem;
+    max-width: 800px;
+    margin: auto;
+}
+
+.intro {
+    text-align: center;
+}
+
+.profilbillede {
+    border-radius: 50%;
+    border: 4px solid #E1BB80;
+    width: 25rem;
+    height: 25rem;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+/* ---------------- Knapper ---------------- */
+.btn {
+    display: inline-block;
+    background: #004d7a;
+    color: white;
+    padding: 0.8em 1.5em;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-top: 1rem;
+    font-weight: bold;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background: #007bbd;
+    transform: translateY(-2px);
+}
+
+/* ---------------- Footer ---------------- */
+footer {
+    text-align: center;
+    background: #7B6B43;
+    color: white;
+    padding: 1rem;
+    width: 100%;
+    box-shadow: 0 -2px 8px rgba(0,0,0,0.1);
+}
+
+/* ---------------- Responsivt design ---------------- */
+@media (max-width: 768px) {
+    nav ul.menu {
+        flex-direction: column;
+    }
+
+    nav ul.menu a {
+        padding: 0.8rem 1rem;
+        text-align: center;
+    }
+
+    .profilbillede {
+        width: 15rem;
+        height: 15rem;
+        
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul.menu a {
+        padding: 0.6rem 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    .profilbillede {
+        width: 12rem;
+        height: 12rem;
+
+    }
+}
+
+.erfaring-sektion {
+    display: flex;
+    justify-content: center; /* Centrerer kassen horisontalt */
+    margin: 3rem 0;
+}
+
+.tabel-kasse {
+    background-color: #f9f4ef; /* Lys baggrund for at adskille */
+    padding: 0.5rem;
+    border-radius: 4px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 900px; /* Begrænser bredden */
+    width: 100%;
+}
+
+.pure-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+}
+
+.pure-table th, .pure-table td {
+    border: 1px solid #51291E;
+    padding: 0.8rem;
+    text-align: left;
+}
+
+.pure-table thead th {
+    background-color: #E1BB80;
+    color: #fff;
+    text-align: center;
+}
+
+.pure-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.pure-table tbody tr:hover {
+    background-color: #d6e7d6;
+}
